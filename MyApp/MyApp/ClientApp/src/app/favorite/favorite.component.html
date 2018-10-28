@@ -1,0 +1,11 @@
+<div *ngFor="let favorite of favorites">
+  <ul>
+    <li>
+      {{ favorite }}
+    </li>
+  </ul>
+  </div>
+<div>
+  <input #teddy type="text" />
+  <button (click)="addFavorite(teddy.value)">Add Favorite</button>
+</div>
